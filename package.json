@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@stopify/stopify": "^0.7.5",
+    "path-browserify": "^0.0.1",
+    "tty-browserify": "^0.0.0"
+  }
+}
