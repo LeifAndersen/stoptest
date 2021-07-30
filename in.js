@@ -1,5 +1,5 @@
 const prog = `
-for(let i = 0; i < 100000000000; i++) {
+for(let i = 0; i < 1000000000; i++) {
   if(i%10000000 === 0) {
     console.log(i);
   }
