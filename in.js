@@ -1,5 +1,9 @@
 const prog = `
-console.log("Hello World!");
+for(let i = 0; i < 100000000000; i++) {
+  if(i%10000000 === 0) {
+    console.log(i);
+  }
+}
 `;
 
 window.stopify = require('@stopify/stopify');
@@ -8,3 +12,7 @@ runner.g = {console};
 runner.run(() => {
     console.log("DONE!");
 });
+setTimeout(() => {
+    console.log("Pausing...");
+    runner.pauseImmediate(() => {console.log("PAUSED");});
+}, 3000);
